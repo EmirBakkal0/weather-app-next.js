@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import CityBar from "./CityBar";
 import Header from "./Header";
 import "@/styles/global.css";
+import "@/app/globals.css"
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
         <header>
           <Header/>
         </header>
-        <CityBar/>
+        <CityBar className="flex justify-center" />
         
         {children}
 
