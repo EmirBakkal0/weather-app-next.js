@@ -1,6 +1,7 @@
 import { Comic_Neue } from "next/font/google";
 import CityBar from "./CityBar";
 import Header from "./Header";
+import Footer from "./Footer.jsx";
 import "@/styles/global.css";
 import "@/app/globals.css"
 const roboto= Comic_Neue({ subsets: ["latin"],weight:'700' });
@@ -21,8 +22,10 @@ export default function RootLayout({ children }) {
         <CityBar/>
         
         {children}
-
-        </body>
+        <footer>
+          <Footer />
+        </footer>
+        </body> 
     </html>
   );
 }

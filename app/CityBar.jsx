@@ -16,7 +16,7 @@ function CityBar() {
     setCity(event.target.value)
   }
   return (
-    <div className='center' style={{display:'flex', flexDirection:"column",alignItems:'center'}}>
+    <div className='center' style={{display:'flex', flexDirection:"row",alignItems:'center',justifyContent:'center'}}>
       {/* <label htmlFor="">Enter City:</label> */}
       <input type="text" onChange={handleCity} value={city} placeholder='Enter location..'/>
       

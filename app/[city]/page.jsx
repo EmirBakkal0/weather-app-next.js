@@ -52,12 +52,12 @@ async function CityWeather({ params }) {
             <div className='center weather'>
             
                 <div className=''>
-                    <h4>{time}</h4>
-                    <h3>{name+", "+country}</h3>
+                    <p>{time}</p>
+                    <p>{name+", "+country}</p>
                     <div style={{flexDirection:"row"}}>
                         <Image src={iconLink} alt="weather icon" width={64} height={64} />
-                        <h2>{`${temp_c} C`  }</h2>
-                        <h4>{condition.text}</h4>
+                        <p>{`${temp_c} C`  }</p>
+                        <p>{condition.text}</p>
                     </div>
     
     
