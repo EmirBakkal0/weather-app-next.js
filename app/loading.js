@@ -2,7 +2,7 @@ import React from 'react'
 
 function loading() {
   return (
-    <div> 
+    <div className='center'> 
         <h2>
          Loading..
         </h2>

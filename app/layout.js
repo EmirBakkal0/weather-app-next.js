@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Comic_Neue } from "next/font/google";
 import CityBar from "./CityBar";
 import Header from "./Header";
 import "@/styles/global.css";
 import "@/app/globals.css"
-const inter = Inter({ subsets: ["latin"] });
+const roboto= Comic_Neue({ subsets: ["latin"],weight:'700' });
 
 
 export const metadata = {
@@ -14,11 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <header>
           <Header/>
         </header>
-        <CityBar className="flex justify-center" />
+        <CityBar/>
         
         {children}
 

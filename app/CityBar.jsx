@@ -16,9 +16,10 @@ function CityBar() {
     setCity(event.target.value)
   }
   return (
-    <div className='flex justify-center'>
+    <div className='center' style={{display:'flex', flexDirection:"column",alignItems:'center'}}>
       {/* <label htmlFor="">Enter City:</label> */}
       <input type="text" onChange={handleCity} value={city} placeholder='Enter location..'/>
+      
 
       <Link href={city}  className='css-button-shadow-border-sliding--blue'>Check weather </Link>
 
